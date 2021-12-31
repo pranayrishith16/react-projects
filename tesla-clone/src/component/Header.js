@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 function Header() {
@@ -17,6 +18,7 @@ function Header() {
             <RightMenu>
                 <a href="#">Shop</a>
                 <a href="#">Tesla Account</a>
+                <CustomMenu />
             </RightMenu>
         </Container>
     )
@@ -51,9 +53,15 @@ const Menu = styled.div`
 `
 
 const RightMenu = styled.div`
+    display: flex;
+    align-items: center;
     a{
         font-weight: 700;
         text-transform: uppercase;
         margin-right: 10px;
     }
+`
+
+const CustomMenu = styled(MenuIcon)`
+
 `
