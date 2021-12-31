@@ -13,9 +13,11 @@ function Section(props) {
                     <LeftButton>
                         {props.leftBtn}
                     </LeftButton>
-                    <RightButton>
-                        {props.rightBtn}
-                    </RightButton>
+                    {props.rightBtn && 
+                        <RightButton>
+                            {props.rightBtn}
+                        </RightButton>
+                    }
                 </ButtonGroup>
                 <DownArrow src="/images/down-arrow.svg" />
             </Buttons>
